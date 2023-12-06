@@ -1,5 +1,9 @@
 using Microsoft.EntityFrameworkCore;
 using TaskManagementSystem.Models;
+using TaskManagementSystem.Controllers;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using TaskManagementSystem;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,6 +13,28 @@ string connectionString = builder.Configuration.GetConnectionString("DefaultConn
 
 builder.Services.AddDbContext<TaskManagementContext>(options =>
     options.UseNpgsql(connectionString));
+
+
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+                    .AddJwtBearer(options =>
+                    {
+                        options.RequireHttpsMetadata = false;
+                        options.TokenValidationParameters = new TokenValidationParameters
+                        {
+                            ValidateIssuer = true,
+                            ValidIssuer = AuthOptions.ISSUER,
+
+                            ValidateAudience = true,
+
+                            ValidAudience = AuthOptions.AUDIENCE,
+
+                            ValidateLifetime = true,
+
+                            IssuerSigningKey = AuthOptions.GetSymmetricSecurityKey(),
+
+                            ValidateIssuerSigningKey = true,
+                        };
+                    });
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -26,8 +52,11 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
+
+app.MapUserEndpoints();
 
 app.Run();

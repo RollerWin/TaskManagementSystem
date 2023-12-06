@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ulpLSKk3x0AZTw20/jemAX0uGSBepfkKpaSF6OoPilmV00usne8eke9jMhRMqzxsuD+TQtj6EI4D4NtQJk0OZg==",
+  "dgSpecHash": "+JJ5rXvI5L6U2JQOAmaXqPxZG+7lV0iWK2GVtKVFZlJdPubjtobfEfqaRNTKNUGxkhXCim7/9VVz2sCPhUMOWQ==",
   "success": true,
   "projectFilePath": "D:\\Soft\\учёба\\Web\\Хайруллин\\TaskManagementSystem\\TaskManagementSystem\\TaskManagementSystem.csproj",
   "expectedPackageFiles": [
@@ -55,7 +55,7 @@
     "C:\\Users\\Ринат\\.nuget\\packages\\humanizer.core.zh-hans\\2.14.1\\humanizer.core.zh-hans.2.14.1.nupkg.sha512",
     "C:\\Users\\Ринат\\.nuget\\packages\\humanizer.core.zh-hant\\2.14.1\\humanizer.core.zh-hant.2.14.1.nupkg.sha512",
     "C:\\Users\\Ринат\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\7.0.14\\microsoft.aspnetcore.authentication.jwtbearer.7.0.14.nupkg.sha512",
-    "C:\\Users\\Ринат\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.11\\microsoft.aspnetcore.openapi.7.0.11.nupkg.sha512",
+    "C:\\Users\\Ринат\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.12\\microsoft.aspnetcore.openapi.7.0.12.nupkg.sha512",
     "C:\\Users\\Ринат\\.nuget\\packages\\microsoft.aspnetcore.razor.language\\6.0.11\\microsoft.aspnetcore.razor.language.6.0.11.nupkg.sha512",
     "C:\\Users\\Ринат\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
     "C:\\Users\\Ринат\\.nuget\\packages\\microsoft.build\\17.3.2\\microsoft.build.17.3.2.nupkg.sha512",

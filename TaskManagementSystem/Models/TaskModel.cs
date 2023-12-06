@@ -2,7 +2,7 @@
 
 namespace TaskManagementSystem.Models
 {
-    public class Task
+    public class TaskModel
     {
         [Key]
         public int TaskID { get; set; }
